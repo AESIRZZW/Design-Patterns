@@ -19,13 +19,16 @@ public class LazySingleton {
     /*
      * Privatized constructor.
      */
-    private LazySingleton(){};
+    private LazySingleton() {
+    }
+
+    ;
 
     /*
      * Synchronization makes each invocation inefficient.
      * Failure to do so, however, can result in the creation of multiple object instances.
      */
-    public static synchronized LazySingleton getInstance(){
+    public static synchronized LazySingleton getInstance() {
         if (instance == null) {
             instance = new LazySingleton();
         }

@@ -19,12 +19,15 @@ public class EagerSingleton {
     /*
      * Privatized constructor.
      */
-    private EagerSingleton(){};
+    private EagerSingleton() {
+    }
+
+    ;
 
     /*
      * There is no need for synchronization and it's efficient.
      */
-    public static EagerSingleton getInstance(){
+    public static EagerSingleton getInstance() {
         return instance;
     }
 }
